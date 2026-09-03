@@ -560,7 +560,7 @@ nav ul li {
 
 .contact-card {
     background: var(--bg-light);
-    padding: 28px 20px;
+    padding: 28px 16px;
     border-radius: 18px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
     transition: var(--transition);
@@ -569,7 +569,7 @@ nav ul li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Prevents elements from bursting outside box boundaries */
+    overflow: hidden;
 }
 
 .contact-card h3 {
@@ -586,7 +586,6 @@ nav ul li {
 .contact-card p {
     width: 100%;
     margin: 0;
-    word-break: break-word; /* Ensures long strings like email stay inside card */
 }
 
 .contact-card a {
@@ -600,17 +599,19 @@ nav ul li {
     color: var(--primary);
 }
 
-/* Fixed Direct Email Link Highlight */
+/* Email Pill Container - Clean Single Line Fit */
 .email-direct-link {
     display: inline-block;
     max-width: 100%;
-    padding: 6px 14px;
+    padding: 6px 10px;
     border-radius: 8px;
     background: rgba(245, 130, 32, 0.08);
     color: var(--orange) !important;
-    font-size: 0.92rem;
+    font-size: 0.85rem;
+    font-weight: 600;
     transition: var(--transition);
     border: 1px solid rgba(245, 130, 32, 0.2);
+    white-space: nowrap;
 }
 
 .email-direct-link:hover {
@@ -618,6 +619,51 @@ nav ul li {
     color: var(--white) !important;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px var(--orange-glow);
+}
+
+/* Social Media Dark-Blue Pill Buttons */
+.social-links {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.social-links h3 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-buttons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 30px;
+    background: var(--primary);
+    color: var(--white) !important;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px var(--blue-glow);
+}
+
+.social-buttons a i {
+    font-size: 1.1rem;
+}
+
+.social-buttons a:hover {
+    background: var(--orange);
+    color: var(--white) !important;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px var(--orange-glow);
 }
 
 /* ================= MAP SECTION ================= */
