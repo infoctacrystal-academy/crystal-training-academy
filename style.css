@@ -798,7 +798,7 @@ footer {
 
 /* Conversion of footer logo 2 to pure white without background */
 .footer-logo-img {
-    width: 260px;
+    width: 180px; /* Increased from 130px to make it larger */
     height: auto;
     filter: brightness(0) invert(1);
     opacity: 0.95;
